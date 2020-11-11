@@ -1,0 +1,67 @@
+.animated {
+	-moz-transition: transform 4s;
+	-webkit-transition: transform 4s;
+	transition: transform 4s;
+}
+html,body
+{
+	background-color: #0758a7;
+	height: 100%;
+	width: 100%;
+	margin:0;
+}
+.fullwidth
+{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	color: white;
+}
+.flex-container
+{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+}
+.col-1
+{
+	flex: 30%;
+}
+.col-2
+{
+	flex: 0%;
+}
+.col-3
+{
+	flex: 30%;
+}
+label
+{
+	font-size: 1.5em;
+}
+p
+{
+	font-size: 4rem;padding: 50px;
+}
+input[type=radio]
+{
+	transform: scale(2.5);margin: 0px 20px 0px 0px;
+}
+input[type=checkbox]
+{
+	transform: scale(2.5);margin: 0px 20px 0px 0px;
+}
+input[type=button]
+{
+	font-size: 2em;
+}
+@media (max-width: 1200px) {
+	.flex-container {
+		flex-direction: column;
+	}
+}

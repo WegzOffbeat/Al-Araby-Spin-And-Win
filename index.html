@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" href="main.css">
+	<title>Al Araby Spin And Win</title>
+</head>
+<body>
+	<div id="AppOptions" class="fullwidth">
+		<p>Please select configuration:</p>
+		<input type="radio" id="five" name="conf" value="five" checked="checked" >
+		<label for="five">Five</label><br><br>
+		<input type="radio" id="ten" name="conf" value="ten" >
+		<label for="ten">Ten</label><br><br><br>
+		<input type="button" value="Next" onclick="selectApp()">
+	</div>
+
+	<div id="FiveOptions" class="fullwidth" style="display: none">
+		<p>Please check the desired items:</p>
+		<input type="checkbox" id="Item_1" name="Item1" value="1" checked="checked">
+		<label for="Item1"> Item 1</label><br><br>
+
+		<input type="checkbox" id="Item_2" name="Item2" value="2" checked="checked">
+		<label for="Item2"> Item 2</label><br><br>
+
+		<input type="checkbox" id="Item_3" name="Item3" value="3" checked="checked">
+		<label for="Item3"> Item 3</label><br><br>
+
+		<input type="checkbox" id="Item_4" name="Item4" value="4" checked="checked">
+		<label for="Item4"> Item 4</label><br><br>
+
+		<input type="checkbox" id="Item_5" name="Item5" value="5" checked="checked">
+		<label for="Item5"> Item 5</label><br><br><br>
+
+		<input type="button" value="Save" onclick="selectOptions()">
+	</div>
+
+	<div id="TenOptions" class="fullwidth" style="display: none">
+		<p>Please check the desired items:</p>
+		<input type="checkbox" id="Item1" name="Item1" value="1" checked="checked">
+		<label for="Item1"> Item 1</label><br><br>
+
+		<input type="checkbox" id="Item2" name="Item2" value="2" checked="checked">
+		<label for="Item2"> Item 2</label><br><br>
+
+		<input type="checkbox" id="Item3" name="Item3" value="3" checked="checked">
+		<label for="Item3"> Item 3</label><br><br>
+
+		<input type="checkbox" id="Item4" name="Item4" value="4" checked="checked">
+		<label for="Item4"> Item 4</label><br><br>
+
+		<input type="checkbox" id="Item5" name="Item5" value="5" checked="checked">
+		<label for="Item5"> Item 5</label><br><br>
+
+		<input type="checkbox" id="Item6" name="Item6" value="6" checked="checked">
+		<label for="Item6"> Item 6</label><br><br>
+
+		<input type="checkbox" id="Item7" name="Item7" value="7" checked="checked">
+		<label for="Item7"> Item 7</label><br><br>
+
+		<input type="checkbox" id="Item8" name="Item8" value="8" checked="checked">
+		<label for="Item8"> Item 8</label><br><br>
+
+		<input type="checkbox" id="Item9" name="Item9" value="9" checked="checked">
+		<label for="Item9"> Item 9</label><br><br>
+
+		<input type="checkbox" id="Item10" name="Item10" value="10" checked="checked">
+		<label for="Item10"> Item 10</label><br><br><br>
+
+		<input type="button" value="Save" onclick="selectOptions()">
+	</div>
+
+	<div id="Wheel" class="flex-container" style="display: none;" onclick="spin()">
+		<div class="col-1">
+			<img  src="logo1.png" style="width: 80%;" >
+		</div>
+		<div class="col-2">
+			<div style="position: relative;width: 700px;height: 741px;">
+				<img src="golden.png" style="position: absolute;width: 700px;height: 741px;left: 0;top: 0;">
+				<img id="rot" src="full10.png" class="animated" onclick="spin()" style="position: absolute;width: 579px;top: 100px;left: 60px;">
+				<img src="Envf.png" style="position: absolute;left: 328px;top: 77px;">
+			</div>
+		</div>
+		<div class="col-3">
+			<img  src="logo2.png" style="width: 80%;">
+		</div>
+	</div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
